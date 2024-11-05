@@ -25,45 +25,7 @@ This project is a simple e-commerce web application built using Spring Boot, H2 
 - **Frontend**: React.js, Axios for API calls
 - **Other**: Maven for dependency management, MultipartFile for image uploads
 
-## Project Structure
 
-```plaintext
-src
-├── main
-│   ├── java
-│   │   └── com
-│   │       └── shop
-│   │           └── E_Com
-│   │               ├── Controller
-│   │               │   └── ProductController.java
-│   │               ├── model
-│   │               │   └── Product.java
-│   │               ├── repo
-│   │               │   └── ProductRepo.java
-│   │               ├── service
-│   │               │   └── ProductService.java
-│   │               └── EComApplication.java
-│   └── resources
-│       ├── application.properties
-│       └── schema.sql (optional)
-└── frontend
-    └── src
-        └── components
-            └── Product.js
-```
-# E-Commerce Web Application
-
-This project is a simple e-commerce web application built using Spring Boot, H2 database, and React.js. The backend provides a RESTful API for managing products, while the frontend allows users to interact with the API for product management.
-
-## Table of Contents
-
-- [Features](#features)
-- [Technologies](#technologies)
-- [Project Structure](#project-structure)
-- [Setup](#setup)
-- [API Endpoints](#api-endpoints)
-- [Usage](#usage)
-- [Notes](#notes)
 
 ## Features
 
@@ -188,13 +150,13 @@ URL: /api/product
 Method: POST
 Request Parts: Product JSON, imgfile as MultipartFile
 Response: 201 Created with the created Product, or 500 Internal Server Error on failure.
-Usage
+## Usage
 
 Run the backend Spring Boot application as described above.
 Start the frontend React application.
 
 Open the browser and navigate to http://localhost:3000 to access the frontend.
 Use the available options to add, view, and manage products.
-Notes
+## Notes
 Database: The H2 database is in-memory and will reset each time the application restarts. You can configure a persistent database for production use.
 Image Uploads: The /api/product endpoint supports adding products with images via MultipartFile. This is handled in the backend by the ProductService.
